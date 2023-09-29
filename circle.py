@@ -38,6 +38,8 @@ manager.collide(cdata, fcl.defaultCollisionCallback)
 # objects that are in collision
 objs_in_collision = set()
 
+print("cdata")
+print(cdata.result.contacts)
 for contact in cdata.result.contacts:
     # Extract collision geometries that are in contact
     coll_geom_0 = contact.o1
