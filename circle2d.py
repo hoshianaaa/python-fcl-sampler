@@ -7,10 +7,10 @@ geom1 = fcl.Sphere(1)  #半径を入れる
 obj1 = fcl.CollisionObject(geom1)
 
 geom2 = fcl.Sphere(1) 
-obj2 = fcl.CollisionObject(geom2, fcl.Transform(np.array([0.0, 0.0, 3])))
+obj2 = fcl.CollisionObject(geom2, fcl.Transform(np.array([3.0, 0.0, 0.0])))
 
 geom3 = fcl.Sphere(1) 
-obj3 = fcl.CollisionObject(geom3, fcl.Transform(np.array([0.0, 0.0, 6.0])))
+obj3 = fcl.CollisionObject(geom3, fcl.Transform(np.array([6.0, 0.0, 0.0])))
 
 geoms = [geom1, geom2, geom3]
 objs = [obj1, obj2, obj3]
